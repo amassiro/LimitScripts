@@ -24,15 +24,15 @@ Example:
 
 
 ***********************
-**** Shape SF + DF ****
+Shape SF + DF
 ***********************
 
-**** using the tool from latinos framework ****
-**** everything update, ready for Moriond ****
-**** optimized cuts ****
+ using the tool from latinos framework
+ everything update, ready for Moriond
+ optimized cuts
 
 ***************************************
-**** To run datacard to get limits ****
+To run datacard to get limits
 ***************************************
 
 On
@@ -50,12 +50,13 @@ rm *.root
 
 rm asymptotic*qqHWWlnln-WHSC2012-2012-26Jun-Shape2012.out
 perl submitLocal_CutBased.pl qqHWWlnln-WHSC2012-2012-26Jun-Shape2012
-# perl submitLocal_CutBased_PostFit.pl qqHWWlnln-WHSC2012-2012-26Jun-Shape2012
+perl submitLocal_CutBased_PostFit.pl qqHWWlnln-WHSC2012-2012-26Jun-Shape2012
 
 ***********************************
-**** To get values from output ****
-******* and draw band plot ********
+To get values from output
+and draw band plot
 ***********************************
+
 
 
 rm -r qqHWWlnln-WHSC2012-2012-26Jun-Shape2012-Result
