@@ -69,11 +69,11 @@ scp -r amassiro@lxplus.cern.ch:/afs/cern.ch/user/a/amassiro/scratch0/VBF/Limit/C
 
 cat qqHWWlnln-WHSC2012-2012-26Jun-Shape2012-Result/asymptotic.hww-19.???.qqHWWlnln-WHSC2012-2012-26Jun-Shape2012.out  | grep 50.0% | awk '{print $5}' &> resultsMedian.txt
 for fil in `ls qqHWWlnln-WHSC2012-2012-26Jun-Shape2012-Result/asymptotic.hww-19.???.qqHWWlnln-WHSC2012-2012-26Jun-Shape2012.out` ; do \
-    cat $fil | grep Expected | tr "\n" " " | awk '{print $10" "$20}'; \
-    done  &> results68.txt
+  cat $fil | grep Expected | tr "\n" " " | awk '{print $10" "$20}'; \
+  done  &> results68.txt
 for fil in `ls qqHWWlnln-WHSC2012-2012-26Jun-Shape2012-Result/asymptotic.hww-19.???.qqHWWlnln-WHSC2012-2012-26Jun-Shape2012.out` ; do \
-    cat $fil | grep Expected | tr "\n" " " | awk '{print $5" "$25}'; \
-    done  &> results95.txt
+  cat $fil | grep Expected | tr "\n" " " | awk '{print $5" "$25}'; \
+  done  &> results95.txt
 cat qqHWWlnln-WHSC2012-2012-26Jun-Shape2012-Result/asymptotic.hww-19.???.qqHWWlnln-WHSC2012-2012-26Jun-Shape2012.out | grep Observed | awk '{print $5}' &> resultsData.txt
 
 r00t -l Draw_Plot_VBF.cxx
